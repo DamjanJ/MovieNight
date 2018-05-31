@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">MovieNight</string>
+
+    <!-- Activity name -->
+    <string name="title_activity_profile">Profile</string>
+
+    <!-- Activity Bar strings -->
+    <string name="action_profile">Profile</string>
+    <string name="action_search">Search</string>
+    <string name="action_trending">Trending</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Toast strings -->
+    <string name="toast_upcoming">Switch to upcoming screen!</string>
+    <string name="toast_watched">Switch to watched screen!</string>
+    <string name="toast_profile">Switch to profile screen!</string>
+
+
+
 </resources>

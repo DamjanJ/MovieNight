@@ -2,6 +2,7 @@ package org.zerocode.movienight;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,8 @@ import org.w3c.dom.Text;
 /**
  * Created by Damjan on 26-May-18.
  */
+
+
 
 public class MainActivity extends AppCompatActivity{
 
@@ -40,29 +43,26 @@ public class MainActivity extends AppCompatActivity{
         // Damjan Tutorial: Adding a "On Click Listener" that will register click and perform an action
         Dugme1.setOnClickListener(new View.OnClickListener() {
             @Override
-
-            public void onClick(View v) {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
                 // TODO Auto-generated method stub
 
 
-                    // Damjan Tutorial: If button is visible, it will disappear on click, and vice versa
-                    if (Tekst1.getVisibility() == TextView.VISIBLE ) {
-                        Tekst1.setVisibility(TextView.INVISIBLE);
-                    }
-                    else {
-                        Tekst1.setVisibility(TextView.VISIBLE);
-                    }
+
 
 
 
             }
-        });
+        };
 
 
 
 
-    }
 
 
 
-}
+
+
